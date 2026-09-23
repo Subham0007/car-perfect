@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import ScoreGauge from './ScoreGauge.vue'
-import type { ComputedScore, ModelRawSignals } from '../types/car'
+import type { ComputedScore, ModelRawSignals, Model } from '../types/car'
 
 defineProps<{
   computedScore: ComputedScore
   rawSignals: ModelRawSignals
+  model: Model
 }>()
 
 const expandedPillar = ref<string | null>(null)
@@ -32,6 +33,13 @@ function toggle(pillar: string) {
           CSI report ({{ rawSignals.csiReport.source }}, {{ rawSignals.csiReport.year }}): {{ rawSignals.csiReport.score }}
         </p>
         <p v-else>No CSI report available.</p>
+        <p
+          v-for="sentiment in rawSignals.forumSentiment.filter((s) => s.aspect === 'reliability')"
+          :key="sentiment.id"
+        >
+          Sentiment: {{ sentiment.sentimentScore }}/100
+          (<a :href="sentiment.threadUrl" target="_blank" rel="noopener">source</a>)
+        </p>
       </div>
     </div>
 
@@ -48,12 +56,13 @@ function toggle(pillar: string) {
         <p v-else data-testid="safety-untested-note">
           Not crash-tested by Global NCAP/Bharat NCAP — treated as 0★ for safety scoring.
         </p>
-        <p>
-          Active safety: ABS {{ rawSignals.safetyRating?.abs ? 'yes' : 'no' }},
-          ESC {{ rawSignals.safetyRating?.esc ? 'yes' : 'no' }},
-          {{ rawSignals.safetyRating?.airbagsCount ?? 0 }} airbags,
-          ADAS {{ rawSignals.safetyRating?.adasPresent ? 'yes' : 'no' }}
+        <p v-if="rawSignals.safetyRating">
+          Active safety: ABS {{ rawSignals.safetyRating.abs ? 'yes' : 'no' }},
+          ESC {{ rawSignals.safetyRating.esc ? 'yes' : 'no' }},
+          {{ rawSignals.safetyRating.airbagsCount }} airbags,
+          ADAS {{ rawSignals.safetyRating.adasPresent ? 'yes' : 'no' }}
         </p>
+        <p v-else>No active-safety data available.</p>
       </div>
     </div>
 
@@ -66,6 +75,13 @@ function toggle(pillar: string) {
           Parts price index: {{ rawSignals.partsPrice.avgPriceIndex }} (1.0 = segment average)
         </p>
         <p>Service centers: {{ rawSignals.dealership?.serviceCenterCount ?? 'N/A' }}</p>
+        <p
+          v-for="sentiment in rawSignals.forumSentiment.filter((s) => s.aspect === 'service')"
+          :key="sentiment.id"
+        >
+          Sentiment: {{ sentiment.sentimentScore }}/100
+          (<a :href="sentiment.threadUrl" target="_blank" rel="noopener">source</a>)
+        </p>
       </div>
     </div>
 
@@ -74,8 +90,12 @@ function toggle(pillar: string) {
         <ScoreGauge label="Value for money" :score="computedScore.valueScore" />
       </button>
       <div v-if="expandedPillar === 'value'" data-testid="pillar-detail-value">
-        <p v-for="sentiment in rawSignals.forumSentiment" :key="sentiment.id">
-          {{ sentiment.aspect }} sentiment: {{ sentiment.sentimentScore }}/100
+        <p>Price range: ₹{{ (model.priceMin / 100000).toFixed(2) }}L – ₹{{ (model.priceMax / 100000).toFixed(2) }}L</p>
+        <p
+          v-for="sentiment in rawSignals.forumSentiment.filter((s) => s.aspect === 'value')"
+          :key="sentiment.id"
+        >
+          Sentiment: {{ sentiment.sentimentScore }}/100
           (<a :href="sentiment.threadUrl" target="_blank" rel="noopener">source</a>)
         </p>
       </div>

@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from 'vitest'
 import { mount, flushPromises } from '@vue/test-utils'
 import ModelDetailView from './ModelDetailView.vue'
+import { getModelById, getModelRawSignals } from '../services/carDataService'
 
 vi.mock('vue-router', () => ({
   useRoute: () => ({ params: { id: 'nexon' } }),
@@ -41,7 +42,7 @@ vi.mock('../services/carDataService', () => ({
 describe('ModelDetailView', () => {
   it('shows a loading state before data resolves', () => {
     const wrapper = mount(ModelDetailView)
-    expect(wrapper.get('[data-testid="model-detail-loading"]').exists()).toBe(true)
+    expect(wrapper.find('[data-testid="model-detail-loading"]').exists()).toBe(true)
   })
 
   it('renders the model name, company, and overall score once loaded', async () => {
@@ -56,5 +57,19 @@ describe('ModelDetailView', () => {
     const wrapper = mount(ModelDetailView)
     await flushPromises()
     expect(wrapper.findComponent({ name: 'PillarBreakdown' }).exists()).toBe(true)
+  })
+
+  it('shows a not-found message when getModelById resolves null', async () => {
+    vi.mocked(getModelById).mockResolvedValueOnce(null)
+    const wrapper = mount(ModelDetailView)
+    await flushPromises()
+    expect(wrapper.find('[data-testid="model-detail-not-found"]').exists()).toBe(true)
+  })
+
+  it('shows an error message when a service call rejects', async () => {
+    vi.mocked(getModelRawSignals).mockRejectedValueOnce(new Error('network error'))
+    const wrapper = mount(ModelDetailView)
+    await flushPromises()
+    expect(wrapper.find('[data-testid="model-detail-error"]').exists()).toBe(true)
   })
 })

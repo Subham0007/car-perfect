@@ -17,18 +17,28 @@ const model = ref<Model | null>(null)
 const company = ref<Company | null>(null)
 const computedScore = ref<ComputedScore | null>(null)
 const rawSignals = ref<ModelRawSignals | null>(null)
+const notFound = ref(false)
+const loadError = ref(false)
 
 async function load(modelId: string) {
-  const [foundModel, companies, score, signals] = await Promise.all([
-    getModelById(modelId),
-    getCompanies(),
-    getComputedScore(modelId),
-    getModelRawSignals(modelId),
-  ])
-  model.value = foundModel
-  company.value = companies.find((c) => c.id === foundModel?.companyId) ?? null
-  computedScore.value = score
-  rawSignals.value = signals
+  try {
+    const [foundModel, companies, score, signals] = await Promise.all([
+      getModelById(modelId),
+      getCompanies(),
+      getComputedScore(modelId),
+      getModelRawSignals(modelId),
+    ])
+    if (!foundModel) {
+      notFound.value = true
+      return
+    }
+    model.value = foundModel
+    company.value = companies.find((c) => c.id === foundModel?.companyId) ?? null
+    computedScore.value = score
+    rawSignals.value = signals
+  } catch {
+    loadError.value = true
+  }
 }
 
 onMounted(() => {
@@ -44,8 +54,10 @@ onMounted(() => {
         <h1>{{ model.name }}</h1>
         <ScoreBadge :score="computedScore.overallScore" label="Overall" />
       </header>
-      <PillarBreakdown :computed-score="computedScore" :raw-signals="rawSignals" />
+      <PillarBreakdown :computed-score="computedScore" :raw-signals="rawSignals" :model="model" />
     </template>
+    <p v-else-if="notFound" data-testid="model-detail-not-found">Car not found.</p>
+    <p v-else-if="loadError" data-testid="model-detail-error">Something went wrong loading this car.</p>
     <p v-else data-testid="model-detail-loading">Loading…</p>
   </div>
 </template>
