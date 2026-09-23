@@ -58,3 +58,22 @@ describe('carDataService: getModelRawSignals', () => {
     expect(signals.forumSentiment.map((s) => s.aspect).sort()).toEqual(['reliability', 'service', 'value'])
   })
 })
+
+import { getComputedScore, getAllComputedScores } from './carDataService'
+
+describe('carDataService: computed scores', () => {
+  it('getAllComputedScores returns a score for every model', async () => {
+    const scores = await getAllComputedScores()
+    expect(scores).toHaveLength(10)
+  })
+
+  it('getComputedScore returns the score for a specific model', async () => {
+    const score = await getComputedScore('scorpio-n')
+    expect(score?.overallScore).toBe(49)
+  })
+
+  it('getComputedScore returns null for an unknown model', async () => {
+    const score = await getComputedScore('does-not-exist')
+    expect(score).toBeNull()
+  })
+})

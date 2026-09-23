@@ -1,0 +1,12 @@
+[
+  { "modelId": "swift", "reliabilityScore": 71, "safetyScore": 40, "repairabilityScore": 86, "valueScore": 81, "overallScore": 70, "lastComputedAt": "2024-05-02" },
+  { "modelId": "brezza", "reliabilityScore": 84, "safetyScore": 84, "repairabilityScore": 82, "valueScore": 73, "overallScore": 81, "lastComputedAt": "2024-05-02" },
+  { "modelId": "baleno", "reliabilityScore": 73, "safetyScore": 14, "repairabilityScore": 83, "valueScore": 77, "overallScore": 62, "lastComputedAt": "2024-05-02" },
+  { "modelId": "creta", "reliabilityScore": 85, "safetyScore": 100, "repairabilityScore": 66, "valueScore": 63, "overallScore": 79, "lastComputedAt": "2024-05-02" },
+  { "modelId": "i20", "reliabilityScore": 82, "safetyScore": 66, "repairabilityScore": 71, "valueScore": 70, "overallScore": 72, "lastComputedAt": "2024-05-02" },
+  { "modelId": "nexon", "reliabilityScore": 79, "safetyScore": 100, "repairabilityScore": 62, "valueScore": 72, "overallScore": 78, "lastComputedAt": "2024-05-02" },
+  { "modelId": "punch", "reliabilityScore": 79, "safetyScore": 94, "repairabilityScore": 69, "valueScore": 81, "overallScore": 81, "lastComputedAt": "2024-05-02" },
+  { "modelId": "scorpio-n", "reliabilityScore": 63, "safetyScore": 20, "repairabilityScore": 50, "valueScore": 64, "overallScore": 49, "lastComputedAt": "2024-05-02" },
+  { "modelId": "seltos", "reliabilityScore": 82, "safetyScore": 82, "repairabilityScore": 51, "valueScore": 59, "overallScore": 69, "lastComputedAt": "2024-05-02" },
+  { "modelId": "city", "reliabilityScore": 82, "safetyScore": 78, "repairabilityScore": 63, "valueScore": 62, "overallScore": 71, "lastComputedAt": "2024-05-02" }
+]
