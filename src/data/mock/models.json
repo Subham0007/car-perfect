@@ -1,0 +1,12 @@
+[
+  { "id": "swift", "companyId": "maruti", "name": "Swift", "segment": "Hatchback", "launchYear": 2024, "priceMin": 649000, "priceMax": 927000 },
+  { "id": "brezza", "companyId": "maruti", "name": "Brezza", "segment": "Compact SUV", "launchYear": 2022, "priceMin": 841000, "priceMax": 1379000 },
+  { "id": "baleno", "companyId": "maruti", "name": "Baleno", "segment": "Premium Hatchback", "launchYear": 2022, "priceMin": 674000, "priceMax": 977000 },
+  { "id": "creta", "companyId": "hyundai", "name": "Creta", "segment": "Compact SUV", "launchYear": 2024, "priceMin": 1110000, "priceMax": 2020000 },
+  { "id": "i20", "companyId": "hyundai", "name": "i20", "segment": "Premium Hatchback", "launchYear": 2023, "priceMin": 720000, "priceMax": 1120000 },
+  { "id": "nexon", "companyId": "tata", "name": "Nexon", "segment": "Compact SUV", "launchYear": 2023, "priceMin": 800000, "priceMax": 1560000 },
+  { "id": "punch", "companyId": "tata", "name": "Punch", "segment": "Micro SUV", "launchYear": 2023, "priceMin": 610000, "priceMax": 1020000 },
+  { "id": "scorpio-n", "companyId": "mahindra", "name": "Scorpio-N", "segment": "SUV", "launchYear": 2022, "priceMin": 1370000, "priceMax": 2450000 },
+  { "id": "seltos", "companyId": "kia", "name": "Seltos", "segment": "Compact SUV", "launchYear": 2023, "priceMin": 1090000, "priceMax": 2020000 },
+  { "id": "city", "companyId": "honda", "name": "City", "segment": "Sedan", "launchYear": 2023, "priceMin": 1180000, "priceMax": 1600000 }
+]

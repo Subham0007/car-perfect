@@ -1,0 +1,8 @@
+[
+  { "id": "maruti", "name": "Maruti Suzuki", "logoUrl": "/logos/maruti.svg" },
+  { "id": "hyundai", "name": "Hyundai", "logoUrl": "/logos/hyundai.svg" },
+  { "id": "tata", "name": "Tata Motors", "logoUrl": "/logos/tata.svg" },
+  { "id": "mahindra", "name": "Mahindra", "logoUrl": "/logos/mahindra.svg" },
+  { "id": "kia", "name": "Kia", "logoUrl": "/logos/kia.svg" },
+  { "id": "honda", "name": "Honda", "logoUrl": "/logos/honda.svg" }
+]
