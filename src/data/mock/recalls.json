@@ -1,0 +1,6 @@
+[
+  { "id": "r1", "modelId": "swift", "date": "2023-03-10", "severity": "low", "description": "Fuel pump wiring inspection" },
+  { "id": "r2", "modelId": "baleno", "date": "2022-07-01", "severity": "medium", "description": "Airbag control unit software update" },
+  { "id": "r3", "modelId": "scorpio-n", "date": "2023-01-15", "severity": "high", "description": "Steering column bolt replacement" },
+  { "id": "r4", "modelId": "city", "date": "2021-11-20", "severity": "low", "description": "Fuel pump replacement" }
+]

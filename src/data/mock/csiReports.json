@@ -1,0 +1,11 @@
+[
+  { "id": "c1", "modelId": "swift", "source": "JD Power India CSI", "year": 2023, "score": 780 },
+  { "id": "c2", "modelId": "brezza", "source": "JD Power India CSI", "year": 2023, "score": 820 },
+  { "id": "c3", "modelId": "baleno", "source": "JD Power India CSI", "year": 2023, "score": 800 },
+  { "id": "c4", "modelId": "creta", "source": "JD Power India CSI", "year": 2023, "score": 810 },
+  { "id": "c5", "modelId": "i20", "source": "JD Power India CSI", "year": 2023, "score": 790 },
+  { "id": "c6", "modelId": "nexon", "source": "JD Power India CSI", "year": 2023, "score": 770 },
+  { "id": "c7", "modelId": "punch", "source": "JD Power India CSI", "year": 2023, "score": 760 },
+  { "id": "c8", "modelId": "scorpio-n", "source": "JD Power India CSI", "year": 2023, "score": 800 },
+  { "id": "c9", "modelId": "city", "source": "JD Power India CSI", "year": 2023, "score": 830 }
+]

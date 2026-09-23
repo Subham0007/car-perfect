@@ -1,0 +1,41 @@
+[
+  { "id": "f1", "modelId": "swift", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/swift-review", "aspect": "reliability", "sentimentScore": 72, "collectedAt": "2024-05-01" },
+  { "id": "f2", "modelId": "swift", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/swift-service", "aspect": "service", "sentimentScore": 78, "collectedAt": "2024-05-01" },
+  { "id": "f3", "modelId": "swift", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/swift-value", "aspect": "value", "sentimentScore": 80, "collectedAt": "2024-05-01" },
+
+  { "id": "f4", "modelId": "brezza", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/brezza-review", "aspect": "reliability", "sentimentScore": 75, "collectedAt": "2024-05-01" },
+  { "id": "f5", "modelId": "brezza", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/brezza-service", "aspect": "service", "sentimentScore": 74, "collectedAt": "2024-05-01" },
+  { "id": "f6", "modelId": "brezza", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/brezza-value", "aspect": "value", "sentimentScore": 70, "collectedAt": "2024-05-01" },
+
+  { "id": "f7", "modelId": "baleno", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/baleno-review", "aspect": "reliability", "sentimentScore": 68, "collectedAt": "2024-05-01" },
+  { "id": "f8", "modelId": "baleno", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/baleno-service", "aspect": "service", "sentimentScore": 71, "collectedAt": "2024-05-01" },
+  { "id": "f9", "modelId": "baleno", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/baleno-value", "aspect": "value", "sentimentScore": 73, "collectedAt": "2024-05-01" },
+
+  { "id": "f10", "modelId": "creta", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/creta-review", "aspect": "reliability", "sentimentScore": 80, "collectedAt": "2024-05-01" },
+  { "id": "f11", "modelId": "creta", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/creta-service", "aspect": "service", "sentimentScore": 76, "collectedAt": "2024-05-01" },
+  { "id": "f12", "modelId": "creta", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/creta-value", "aspect": "value", "sentimentScore": 65, "collectedAt": "2024-05-01" },
+
+  { "id": "f13", "modelId": "i20", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/i20-review", "aspect": "reliability", "sentimentScore": 74, "collectedAt": "2024-05-01" },
+  { "id": "f14", "modelId": "i20", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/i20-service", "aspect": "service", "sentimentScore": 72, "collectedAt": "2024-05-01" },
+  { "id": "f15", "modelId": "i20", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/i20-value", "aspect": "value", "sentimentScore": 70, "collectedAt": "2024-05-01" },
+
+  { "id": "f16", "modelId": "nexon", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/nexon-review", "aspect": "reliability", "sentimentScore": 66, "collectedAt": "2024-05-01" },
+  { "id": "f17", "modelId": "nexon", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/nexon-service", "aspect": "service", "sentimentScore": 60, "collectedAt": "2024-05-01" },
+  { "id": "f18", "modelId": "nexon", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/nexon-value", "aspect": "value", "sentimentScore": 75, "collectedAt": "2024-05-01" },
+
+  { "id": "f19", "modelId": "punch", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/punch-review", "aspect": "reliability", "sentimentScore": 70, "collectedAt": "2024-05-01" },
+  { "id": "f20", "modelId": "punch", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/punch-service", "aspect": "service", "sentimentScore": 68, "collectedAt": "2024-05-01" },
+  { "id": "f21", "modelId": "punch", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/punch-value", "aspect": "value", "sentimentScore": 77, "collectedAt": "2024-05-01" },
+
+  { "id": "f22", "modelId": "scorpio-n", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/scorpio-n-review", "aspect": "reliability", "sentimentScore": 62, "collectedAt": "2024-05-01" },
+  { "id": "f23", "modelId": "scorpio-n", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/scorpio-n-service", "aspect": "service", "sentimentScore": 58, "collectedAt": "2024-05-01" },
+  { "id": "f24", "modelId": "scorpio-n", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/scorpio-n-value", "aspect": "value", "sentimentScore": 72, "collectedAt": "2024-05-01" },
+
+  { "id": "f25", "modelId": "seltos", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/seltos-review", "aspect": "reliability", "sentimentScore": 71, "collectedAt": "2024-05-01" },
+  { "id": "f26", "modelId": "seltos", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/seltos-service", "aspect": "service", "sentimentScore": 69, "collectedAt": "2024-05-01" },
+  { "id": "f27", "modelId": "seltos", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/seltos-value", "aspect": "value", "sentimentScore": 60, "collectedAt": "2024-05-01" },
+
+  { "id": "f28", "modelId": "city", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/city-review", "aspect": "reliability", "sentimentScore": 82, "collectedAt": "2024-05-01" },
+  { "id": "f29", "modelId": "city", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/city-service", "aspect": "service", "sentimentScore": 80, "collectedAt": "2024-05-01" },
+  { "id": "f30", "modelId": "city", "source": "teambhp", "threadUrl": "https://www.team-bhp.com/forum/city-value", "aspect": "value", "sentimentScore": 66, "collectedAt": "2024-05-01" }
+]

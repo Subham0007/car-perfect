@@ -1,0 +1,8 @@
+[
+  { "id": "d1", "companyId": "maruti", "serviceCenterCount": 4200, "dealershipCount": 3500 },
+  { "id": "d2", "companyId": "hyundai", "serviceCenterCount": 1800, "dealershipCount": 1400 },
+  { "id": "d3", "companyId": "tata", "serviceCenterCount": 1600, "dealershipCount": 1200 },
+  { "id": "d4", "companyId": "mahindra", "serviceCenterCount": 1200, "dealershipCount": 900 },
+  { "id": "d5", "companyId": "kia", "serviceCenterCount": 500, "dealershipCount": 400 },
+  { "id": "d6", "companyId": "honda", "serviceCenterCount": 900, "dealershipCount": 700 }
+]

@@ -1,0 +1,12 @@
+[
+  { "id": "s1", "modelId": "swift", "source": "global_ncap", "tested": true, "adultStars": 2, "childStars": 2, "testedVariant": "base", "abs": true, "esc": false, "airbagsCount": 2, "adasPresent": false },
+  { "id": "s2", "modelId": "brezza", "source": "global_ncap", "tested": true, "adultStars": 4, "childStars": 4, "testedVariant": "top", "abs": true, "esc": true, "airbagsCount": 6, "adasPresent": false },
+  { "id": "s3", "modelId": "baleno", "source": "global_ncap", "tested": false, "adultStars": null, "childStars": null, "testedVariant": null, "abs": true, "esc": false, "airbagsCount": 2, "adasPresent": false },
+  { "id": "s4", "modelId": "creta", "source": "bharat_ncap", "tested": true, "adultStars": 5, "childStars": 5, "testedVariant": "top", "abs": true, "esc": true, "airbagsCount": 6, "adasPresent": true },
+  { "id": "s5", "modelId": "i20", "source": "global_ncap", "tested": true, "adultStars": 3, "childStars": 3, "testedVariant": "top", "abs": true, "esc": true, "airbagsCount": 6, "adasPresent": false },
+  { "id": "s6", "modelId": "nexon", "source": "global_ncap", "tested": true, "adultStars": 5, "childStars": 5, "testedVariant": "top", "abs": true, "esc": true, "airbagsCount": 6, "adasPresent": true },
+  { "id": "s7", "modelId": "punch", "source": "global_ncap", "tested": true, "adultStars": 5, "childStars": 5, "testedVariant": "top", "abs": true, "esc": true, "airbagsCount": 6, "adasPresent": false },
+  { "id": "s8", "modelId": "scorpio-n", "source": "global_ncap", "tested": false, "adultStars": null, "childStars": null, "testedVariant": null, "abs": true, "esc": true, "airbagsCount": 2, "adasPresent": false },
+  { "id": "s9", "modelId": "seltos", "source": "bharat_ncap", "tested": true, "adultStars": 3, "childStars": 4, "testedVariant": "top", "abs": true, "esc": true, "airbagsCount": 6, "adasPresent": true },
+  { "id": "s10", "modelId": "city", "source": "global_ncap", "tested": true, "adultStars": 4, "childStars": 4, "testedVariant": "top", "abs": true, "esc": true, "airbagsCount": 6, "adasPresent": false }
+]

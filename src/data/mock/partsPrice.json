@@ -1,0 +1,12 @@
+[
+  { "id": "p1", "modelId": "swift", "avgPriceIndex": 0.85 },
+  { "id": "p2", "modelId": "brezza", "avgPriceIndex": 0.95 },
+  { "id": "p3", "modelId": "baleno", "avgPriceIndex": 0.88 },
+  { "id": "p4", "modelId": "creta", "avgPriceIndex": 1.10 },
+  { "id": "p5", "modelId": "i20", "avgPriceIndex": 1.00 },
+  { "id": "p6", "modelId": "nexon", "avgPriceIndex": 1.05 },
+  { "id": "p7", "modelId": "punch", "avgPriceIndex": 0.98 },
+  { "id": "p8", "modelId": "scorpio-n", "avgPriceIndex": 1.20 },
+  { "id": "p9", "modelId": "seltos", "avgPriceIndex": 1.15 },
+  { "id": "p10", "modelId": "city", "avgPriceIndex": 1.10 }
+]
